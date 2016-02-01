@@ -1,0 +1,41 @@
+{
+  "name": "systemjs-bundler-prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "jspm": "jspm",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuelRauber/systemjs-bundler-prototype.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuelRauber/systemjs-bundler-prototype/issues"
+  },
+  "homepage": "https://github.com/ManuelRauber/systemjs-bundler-prototype#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.10.0",
+    "imports-loader": "^0.6.5",
+    "jspm": "^0.16.25",
+    "merge2": "^1.0.0",
+    "systemjs": "^0.19.18",
+    "systemjs-builder": "^0.15.5",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.12"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "simpleTest"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    }
+  }
+}

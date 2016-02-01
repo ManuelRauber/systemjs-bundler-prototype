@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    System.config({
+       packages: {
+           app: {
+               format: 'register',
+               defaultExtension: 'js'
+           }
+       },
+        paths: {
+            'terminal2/core': 'terminal2/terminal2.js'
+        }
+    });
+
+    System.import('app/app')
+            .then(null, console.error.bind(console));
+</script>
+
+</body>
+</html>
