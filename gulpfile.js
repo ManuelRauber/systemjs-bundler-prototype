@@ -38,4 +38,9 @@ gulp.task('systemjs', ['compile'], () => {
         });
 });
 
-gulp.task('default', ['systemjs']);
+gulp.task('copy-dist', ['systemjs'], () => {
+    return gulp.src('./dist/terminal2/**/*')
+        .pipe(gulp.dest('./node_modules/terminal2'));
+});
+
+gulp.task('default', ['copy-dist']);
